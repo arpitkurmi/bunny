@@ -140,3 +140,8 @@
         margin-top: 50%;
     }
 }
+@media (max-width:290px){
+    .showcase{
+        margin-top: 75vh;
+    }
+}
