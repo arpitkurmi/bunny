@@ -1,0 +1,142 @@
+@media (max-width:750px){
+    body{
+        font-size: small;
+    }
+  .top{
+    display: none;
+  }  
+  header{
+    display: none;
+  }
+  .header2{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 556;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+    padding: 10%;
+  }
+  .navbtn:hover{
+    color: hsl(38, 61%, 73%);
+    border-color: hsl(38, 61%, 73%);
+    background-color: transparent;
+  }
+  .navm{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    background-color: hsla(30, 12%, 5%, 1);
+    z-index: 666;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0, 0, 1, 0.54);
+  }
+  .details{
+    color: white;
+    align-items: center;
+    margin-top: 10%;
+  }
+  .allownav{
+    visibility: visible;
+  }
+  .navm ul li button{
+    transform: rotate(90deg);
+  }
+  .navm ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20%;
+    line-height: 3;
+  }
+  .sap{
+    width: 60px;
+    margin-top: 10%;
+  }
+  .container{
+    height: 50vh;
+    overflow: hidden;
+  }
+  #back{
+    width: 120%;
+    height: 50vh;
+    background-position: center;
+    
+  }
+  .words{
+    margin-top: 12vh;
+    line-height: 1.5;
+
+  }
+  .showcase{
+    height: fit-content;
+    margin-top: 60vh;
+  }
+  .card{
+    margin:20px 0;
+  }
+  #pehla{
+    display: none;
+  }
+  .dish{
+    padding: 2%;
+  }
+  .menul2{
+    padding: 2%;
+  }
+  footer{
+    height: 50vh;
+    width: 100%;
+    margin-top:0;
+    column-gap: 10px;
+  }
+}
+@media(min-width:750px) and (max-width:1130px){
+    .navm{
+      display: none;
+    }
+    #back{
+        height: 60vh;
+    }
+    .words{
+        margin-top: 18vh;
+    }
+    #pehla{
+        display: none;
+    }
+    .showcase{
+        height: fit-content;
+        margin-top: 55vh;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card{
+        margin-top: 40px;
+    }
+    footer{
+        height: 50vh;
+        width: 100%;
+        margin-top:0;
+        column-gap: 10px;
+      }
+}
+@media(min-width:1130px) and (max-width:1750px){
+    .navm{
+      display: none;
+    }
+    .words{
+        margin-top: 20%;
+    }
+    .showcase{
+        margin-top: 50%;
+    }
+}
